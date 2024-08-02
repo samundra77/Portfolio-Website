@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/admin.js" defer></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/experience">Experience</a>
+            <a href="/contact">Contact</a>
+            <a href="/admin">Admin Panel</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Admin Panel</h1>
+        <form id="add-project-form">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" name="imageUrl" required>
+            
+            
+            <button type="submit">Add Project</button>
+        </form>
+        
+        <section id="manage-projects">
+            <h2>Manage Projects</h2>
+            <div id="projects-list"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Pixels Photography</p>
+    </footer>
+    
+    <script src="scripts/admin.js"></script>
+</body>
+</html>
